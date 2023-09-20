@@ -1,7 +1,5 @@
 # Tecsup Backend
 
-## Grupo G18
-
 ### Introducción
 
 - [Clases](#lunes)
