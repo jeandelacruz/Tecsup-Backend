@@ -2,12 +2,12 @@
 
 ## Grupo G18
 
-### Lista
+### Introducción
 
 - [Clases](#lunes)
 - [Recursos](#recursos)
 
-### Lunes
+### Iniciando con Python
 
 - [Diagrama de Flujo](Lunes/diagrama_flujo.drawio)
 - [Variables](Lunes/variables.py)
@@ -17,7 +17,7 @@
   - [Asignación](Lunes/operadores_asignacion.py)
 - [Condicionales](Lunes/condicionales.py)
 
-### Martes
+### Estructuras de datos
 
 - Estructuras de Datos
   - [Listas](Martes/listas.py)
@@ -26,7 +26,7 @@
 - [Ciclos | Bucles](Martes/iteradores.py)
 - [Ejercicios](Martes/ejercicios.py)
 
-### Miercoles
+### Entornos virtuales y PIP
 
 - [Entornos Virtuales y Manejo de PIP](Miercoles/README.md)
 - [Modulos](Miercoles/modulos.py)
@@ -35,7 +35,7 @@
   - [Escritura](Miercoles/escritura_archivos.py)
 - [Excepciones](Miercoles/excepciones.py)
 
-### Jueves
+### POO
 
 - Programación Orientada a Objetos
   - [Diagrama](Jueves/poo.drawio)
