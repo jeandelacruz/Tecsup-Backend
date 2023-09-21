@@ -2,42 +2,46 @@
 
 ### Introducción
 
-- [Clases](#lunes)
+- [Clases](#INTRODUCCION_PYTHON)
 - [Recursos](#recursos)
 
 ### Iniciando con Python
 
-- [Diagrama de Flujo](Lunes/diagrama_flujo.drawio)
-- [Variables](Lunes/variables.py)
+- [Diagrama de Flujo](INTRODUCCION_PYTHON/diagrama_flujo.drawio)
+- [Variables](INTRODUCCION_PYTHON/variables.py)
 - Operadores
-  - [Entrada](Lunes/operador_entrada.py)
-  - [Aritmeticos](Lunes/operadores_aritmeticos.py)
-  - [Asignación](Lunes/operadores_asignacion.py)
-- [Condicionales](Lunes/condicionales.py)
+  - [Entrada](INTRODUCCION_PYTHON/operador_entrada.py)
+  - [Aritmeticos](INTRODUCCION_PYTHON/operadores_aritmeticos.py)
+  - [Asignación](INTRODUCCION_PYTHON/operadores_asignacion.py)
+- [Condicionales](INTRODUCCION_PYTHON/condicionales.py)
 
 ### Estructuras de datos
 
 - Estructuras de Datos
-  - [Listas](Martes/listas.py)
-  - [Tuplas](Martes/tuplas.py)
-  - [Diccionarios](Martes/diccionarios.py)
-- [Ciclos | Bucles](Martes/iteradores.py)
-- [Ejercicios](Martes/ejercicios.py)
+  - [Listas](ESTRUCTURA_DE_DATOS/listas.py)
+  - [Tuplas](ESTRUCTURA_DE_DATOS/tuplas.py)
+  - [Diccionarios](ESTRUCTURA_DE_DATOS/diccionarios.py)
+- [Ciclos | Bucles](ESTRUCTURA_DE_DATOS/iteradores.py)
+- [Ejercicios](ESTRUCTURA_DE_DATOS/ejercicios.py)
 
 ### Entornos virtuales y PIP
 
-- [Entornos Virtuales y Manejo de PIP](Miercoles/README.md)
-- [Modulos](Miercoles/modulos.py)
+- [Entornos Virtuales y Manejo de PIP](ENTORNOS_VIRTUALES_PIP/README.md)
+- [Modulos](ENTORNOS_VIRTUALES_PIP/modulos.py)
 - Manejo de Archivos
-  - [Lectura](Miercoles/lectura_archivos.py)
-  - [Escritura](Miercoles/escritura_archivos.py)
-- [Excepciones](Miercoles/excepciones.py)
+  - [Lectura](ENTORNOS_VIRTUALES_PIP/lectura_archivos.py)
+  - [Escritura](ENTORNOS_VIRTUALES_PIP/escritura_archivos.py)
+- [Excepciones](ENTORNOS_VIRTUALES_PIP/excepciones.py)
 
 ### POO
 
 - Programación Orientada a Objetos
-  - [Diagrama](Jueves/poo.drawio)
-  - [Clase](Jueves/poo.py)
+  - [Diagrama](POO/poo.drawio)
+  - [Clase](POO/poo.py)
+
+### BASE DE DATOS
+
+- [RDBMS Y DDL](BASE_DE_DATOS/RDBMS.md)
 
 ### Recursos
 
