@@ -136,3 +136,89 @@ ALTER TABLE nombre_table RENAME COLUMN nombre_columna TO nombre_columna_nuevo;
 ```sql
 ALTER TABLE nombre_tabla RENAME TO nombre_tabla_nuevo;
 ```
+
+# DML
+
+1. SELECT: Se usa para consultar y recuperar datos de una o mas tablas.
+
+```sql
+SELECT campo_1, campo_2 FROM nombre_tabla; -- Traer los registros solo con las columnas mencioanadas
+
+SELECT * FROM nombre_tabla; -- Traer los registros con todas sus columnas
+```
+
+2. INSERT: Insertar o registrar datos en nuestras tablas.
+
+```sql
+INSERT INTO nombre_tabla (campos) VALUES (valores);
+```
+
+3. UPDATE: Modificar datos existentes de una tabla.
+
+```sql
+UPDATE nombre_tabla SET campo = nuevo_valor WHERE campo = valor;
+```
+
+4. DELETE: Elimina registros existentes de una tabla.
+
+```sql
+DELETE FROM nombre_tabla WHERE campo = valor;
+```
+
+## Ejercicios
+
+### Ejercicio 1
+
+1. Crear una base de datos llamada minimarket.
+2. Crear 1 tabla llamada productos.
+   - Los campos seran:
+     - id
+     - nombre
+     - precio
+3. Ejecutar los 3 comandos de DML (SELECT, INSERT, UPDATE)
+
+## JOINS
+
+1. INNER JOIN: Devuelve las filas cuando hay al menos una relacion.
+
+```sql
+SELECT * FROM tabla_uno INNER JOIN tabla_dos ON tabla_uno.campo_uno = tabla_dos.pk; -- pk -> PRIMARY KEY
+```
+
+2. LEFT JOIN: Devuelve todas las filas de la tabla izquierda y solo las de coincidencia de la tabla derecha.
+
+```sql
+SELECT * FROM tabla_uno LEFT JOIN tabla_dos ON tabla_uno.campo_uno = tabla_dos.pk; -- pk -> PRIMARY KEY
+```
+
+3. RIGHT JOIN: Devuelve todas las filas de la tabla derecha y las coincidencias de la tabla izquierda.
+
+```sql
+SELECT * FROM tabla_uno RIGHT JOIN tabla_dos ON tabla_uno.campo_uno = tabla_dos.pk; -- pk -> PRIMARY KEY
+```
+
+4. FULL JOIN: Devuelve todas las filas tenga una coincidencia o no.
+
+```sql
+SELECT * FROM tabla_uno FULL JOIN tabla_dos ON tabla_uno.campo_uno = tabla_dos.pk; -- pk -> PRIMARY KEY
+```
+
+---
+
+2 TABLAS
+
+1. inventario_2022: Contener todos los productos y la cantidad en el año 2022.
+2. inventario_2023: Contener todos los productos y la cantidad en el año 2023.
+
+- Los productos que estaban en stock en el 2022 pero no en el 2023.
+- Los productos que estaban en stock en el 2023 pero no en el 2022.
+- Los productos que estaban en stock en ambos años.
+
+```sql
+SELECT
+COALESCE(iv_d.producto, iv_t.producto) as producto,
+iv_d.cantidad as cantidad_2022,
+iv_t.cantidad as cantidad_2023
+FROM inventario_2022 iv_d
+FULL JOIN inventario_2023 iv_t ON iv_d.producto = iv_t.producto;
+```
